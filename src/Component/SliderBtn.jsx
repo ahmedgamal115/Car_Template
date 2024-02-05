@@ -23,7 +23,7 @@ const SliderBtn = ({dirction,imageIndex,setImageIndex,imageNumber}) => {
   },[imageIndex,imageNumber,setImageIndex])
   return (
     <div className={`absolute top-[50%] 
-    ${dirction === 'left' ? 'left-[10%]' :'right-[10%]'} 
+    ${dirction === 'left' ? 'lg:left-[10%] sm:left-[10%] max-sm:left-[10%]' :'sm:right-[10%] max-sm:right-[0%] lg:right-[10%]'} 
     translate-x-[-50%] translate-y-[-50%] z-20
     text-slate-100`}>
       <div className="relative w-fit h-fit cursor-pointer"

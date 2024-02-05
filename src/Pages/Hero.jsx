@@ -26,7 +26,7 @@ const Hero = () => {
                 {
                   idx === imageIndex && 
                   <div className="absolute top-[30%] left-[50%]  
-                  translate-x-[-50%] translate-y-[-50%] lg:w-[60%] sm:w-[50%] max-sm:w-[50%]  z-30">
+                  translate-x-[-50%] translate-y-[-50%] lg:w-[60%] sm:w-[50%] max-sm:w-[80%]  z-30">
                     <div className="relative before:block lg:before:w-[60px] 
                   before:h-[10px] before:absolute before:bg-master-blue
                   lg:before:left-[-80px] lg:before:top-[40px] before:z-20
@@ -44,8 +44,8 @@ const Hero = () => {
                 }
                 {
                   idx === imageIndex && 
-                  <div className="absolute left-[50%] translate-x-[-50%] z-30 w-[85%] 
-                  lg:h-[30vh] lg:top-[110vh] sm:h-[60vh] sm:top-[90vh] max-sm:h-[60vh] max-sm:top-[90vh] bg-master-blue">
+                  <div className="absolute left-[50%] translate-x-[-50%] z-30 lg:w-[85%] sm:w-[85%] max-sm:w-[90%]  
+                  lg:h-[30vh] lg:top-[110vh] sm:h-[60vh] sm:top-[90vh] max-sm:h-[100vh] max-sm:top-[85vh] bg-master-blue">
                     <CarOptionsCard CarOptions = {img.options}/>
                   </div>
                 }
