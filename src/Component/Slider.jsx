@@ -52,7 +52,7 @@ const Slider = ({ carsData, setSwiperState }) => {
       className="mySwiper .swiper-pagination-bullet:w-7 flex w-full h-full p-5  overflow-hidden"
     >
       {carsData.map((carData,idx)=>(
-        <SwiperSlide key={idx}>
+        <SwiperSlide key={idx} className='w-full'>
           <CarCard carData={carData}/>
         </SwiperSlide>
       ))}

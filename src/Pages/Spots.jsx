@@ -9,9 +9,9 @@ const Spots = () => {
     <section className="lg:flex lg:justify-center lg:items-center lg:flex-row
     sm:flex sm:flex-col sm:justify-center sm:items-start sm:gap-10">
         <div className="flex-1 lg:px-10 flex flex-col gap-y-10 sm:px-0">
-          <h2 className="font-bold font-logoFont2 lg:text-4xl uppercase lg:w-[280px] sm:w-full sm:text-3xl">Why Sport VEHICLES?</h2>
+          <h2 className="font-bold font-logoFont2 lg:text-4xl uppercase lg:w-[280px] sm:w-full sm:text-3xl max-sm:w-full max-sm:text-3xl">Why Sport VEHICLES?</h2>
           <div className="relative lg:flex justify-start items-start 
-          gap-y-14 flex-col sm:hidden ">
+          gap-y-14 flex-col sm:hidden max-sm:hidden ">
             <img 
             src={photo1} 
             alt="Poster"
@@ -47,11 +47,11 @@ const Spots = () => {
                   alt=""
                   width={90}
                   height={90}
-                  className="object-contain w-[90px] h-[90px]" />
+                  className="object-contain lg:w-[90px] lg:h-[90px] sm:w-[70px] sm:h-[70px] max-sm:w-[60px] max-sm:h-[60px]" />
                 </div>
                 <div className="flex-1">
                   <h2 className="font-bold font-textFont2 text-xl leading-[70px]">{advantagesSportCar.title}</h2>
-                  <p className="font-textFont2 text-sm w-[80%]">{advantagesSportCar.paragraph}</p>
+                  <p className="font-textFont2 text-sm lg:w-[80%] sm:w-[90%] max-sm:w-[100%]">{advantagesSportCar.paragraph}</p>
                 </div>
               </div>
             ))

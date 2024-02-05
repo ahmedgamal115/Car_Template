@@ -5,7 +5,7 @@ import {Navbar,Accessories,ContectUs,
 
 const App = () => {
   return (
-    <main className='relative'>
+    <main className='relative w-full'>
         <Navbar/>
       <section className="padding-b">
         <Hero/>
@@ -13,7 +13,7 @@ const App = () => {
       <section className="padding">
         <Spots/>
       </section>
-      <section className="padding bg-primary">
+      <section className="lg:padding bg-primary">
         <Feature/>
       </section>
       <section className="padding">

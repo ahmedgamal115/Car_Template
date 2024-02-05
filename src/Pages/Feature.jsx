@@ -17,8 +17,8 @@ const Feature = () => {
   }
   return (
     <section className="w-full flex flex-col justify-center items-center gap-10">
-        <div className="w-full flex justify-between items-center px-16">
-          <h2 className="font-bold font-textFont2 text-4xl text-slate-100">FEATURED ITEMS</h2>
+        <div className="w-full flex justify-between items-center lg:px-16 sm:px-5 max-sm:px-5 sm:pt-10 max-sm:pt-10">
+          <h2 className="font-bold font-textFont2 lg:text-4xl sm:text-2xl max-sm:text-2xl text-slate-100">FEATURED ITEMS</h2>
           <div className="flex justify-center items-center gap-1">
             <div onClick={()=>{handelPrevBtn()}}>
               <OctagonShape dirction={'left'}/>
@@ -28,8 +28,8 @@ const Feature = () => {
             </div>
           </div>
         </div>
-        <div className="w-[90%]  h-[55vh] mt-10
-         overflow-hidden">
+        <div className="lg:w-[90%] sm:w-[100%] max-sm:w-[100%]  h-[55vh] lg:mt-10
+        sm:mt-3 max-sm:mt-3 sm:mb-5 max-sm:mb-5 overflow-hidden">
             <Slider carsData={CarCardData} setSwiperState={setSwiperState} />
         </div>
     </section>

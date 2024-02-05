@@ -16,11 +16,11 @@ const ContectUs = () => {
     })
   },[])
   return (
-    <div ref={contectPosition}  className="w-full flex lg:justify-center lg:items-center lg:flex-row sm:flex-col">
-        <div className="relative lg:w-[65%] sm:w-full h-screen bg-hero bg-cover">
+    <div ref={contectPosition}  className="w-full flex lg:justify-center lg:items-center lg:flex-row sm:flex-col max-sm:flex-col">
+        <div className="relative lg:w-[65%] sm:w-full max-sm:w-full h-screen bg-hero bg-cover">
           <EmailForm fouceInput={fouceInput}/>
         </div>
-        <div className="lg:w-[35%] sm:w-full h-full flex flex-col">
+        <div className="lg:w-[35%] sm:w-full max-sm:w-full h-full flex flex-col">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3459.081573012896!2d31.30803412434068!3d29.890750075001385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145837ab2995ff11%3A0x54b54d4523f60f78!2z2YjYrNmK2Ycg2KfYqNin2LjZh9iMINmF2YbYtNij2Kkg2YbYp9i12LHYjCDZgtiz2YUg2K3ZhNmI2KfZhtiMINmF2K3Yp9mB2LjYqSDYp9mE2YLYp9mH2LHYqeKArCA0MDQyNzM4!5e0!3m2!1sar!2seg!4v1702839345602!5m2!1sar!2seg" 
           className="border-0 w-full h-[370px]"
           allowFullScreen="" 

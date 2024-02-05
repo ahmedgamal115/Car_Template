@@ -8,11 +8,11 @@ import Button from './Button'
 const CarOptionsCard = ({CarOptions}) => {
   return (
     <div className="relative w-full h-[30vh] p-7 lg:flex lg:justify-start lg:items-center 
-    sm:grid-cols-4 sm:grid gap-6">
+    sm:grid-cols-4 sm:grid max-sm:grid-cols-2 max-sm:grid gap-6">
         <div className="relative flex lg:flex-1 flex-col items-center justify-center gap-3
         before:block before:absolute before:w-[1px] before:h-[20vh]  before:right-[0px]
         before:bg-slate-200 before:opacity-20">
-            <div className=" flex-1 w-[90px] h-[90px]">
+            <div className=" flex-1 lg:w-[90px] lg:h-[90px] ">
                 <img 
                 src= {CarOptions.carLogo}
                 alt="Car Logo"
@@ -22,7 +22,7 @@ const CarOptionsCard = ({CarOptions}) => {
             </div>
             <p className="font-bold text-2xl text-slate-100 text-center font-textFont">{CarOptions.name}</p>
         </div>
-        <div className="relative flex lg:flex-1 flex-col items-center justify-center gap-3
+        <div className="relative flex lg:flex-1 max-sm:hidden flex-col items-center justify-center gap-3
         before:block before:absolute before:w-[1px] before:h-[20vh]  before:right-[0px]
         before:bg-slate-200 before:opacity-20">
             <div className="flex justify-center flex-1 w-[90px] h-[90px]">
@@ -38,7 +38,7 @@ const CarOptionsCard = ({CarOptions}) => {
                 <p className='font-bold text-sm text-slate-100 text-center font-textFont2'>{CarOptions.Horsepower}</p>
             </div>
         </div>
-        <div className="relative flex lg:flex-1 flex-col items-center justify-center gap-3
+        <div className="relative flex lg:flex-1 max-sm:hidden flex-col items-center justify-center gap-3
         before:block before:absolute before:w-[1px] before:h-[20vh]  before:right-[0px]
         before:bg-slate-200 before:opacity-20">
             <div className="flex justify-center flex-1 w-[90px] h-[90px]">
@@ -70,7 +70,7 @@ const CarOptionsCard = ({CarOptions}) => {
                 <p className='font-bold text-sm text-slate-100 text-center font-textFont2'>{CarOptions.Engine_Type}</p>
             </div>
         </div>
-        <div className="relative flex lg:flex-1 flex-col items-center justify-center gap-3
+        <div className="relative flex lg:flex-1 max-sm:hidden flex-col items-center justify-center gap-3
         before:block before:absolute before:w-[1px] before:h-[20vh]  before:right-[0px]
         before:bg-slate-200 before:opacity-20">
             <div className="flex justify-center flex-1 w-[90px] h-[90px]">
@@ -105,11 +105,11 @@ const CarOptionsCard = ({CarOptions}) => {
         <div className="relative flex lg:flex-1 flex-col items-center justify-center gap-3 sm:col-span-2">
             <div className="flex flex-col w-[80%] items-start justify-start flex-1">
                 <p className='font-textFont2 text-slate-200 font-bold text-sm'>Our Price</p>
-                <h2 className='font-bold font-textFont2 text-3xl text-yellow-400'>
+                <h2 className='font-bold font-textFont2 lg:text-3xl sm:text-2xl max-sm:text-2xl text-yellow-400'>
                     {CarOptions.Price}
                 </h2>
             </div>
-            <div className='flex justify-center items-center h-16 w-[80%] '>
+            <div className='flex justify-center items-center h-16 lg:w-[80%] sm:w-[80%] max-sm:w-[100%]'>
                 <Button label={"View More"}/>
             </div>
         </div>

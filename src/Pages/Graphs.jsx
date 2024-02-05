@@ -45,14 +45,14 @@ const Graphs = () => {
     <div ref={test} className="w-full flex flex-col justify-center items-center gap-10" >
         <div className="w-full lg:block lg:text-start
         sm:flex sm:items-center sm:justify-center sm:text-center">
-          <p className="lg:w-[50%] lg:text-4xl sm:text-3xl sm:w-[80%] font-textFont2 font-bold 
+          <p className="lg:w-[50%] lg:text-4xl sm:text-3xl sm:w-[80%] max-sm:text-2xl max-sm:w-[100%] font-textFont2 font-bold 
           text-slate-100">OVER 10 YEARS WE SELL ELECTRIC CARS</p>
         </div>
         <div className="w-[90%] flex justify-between items-center flex-wrap gap-10">
           {
             statistics.map((statistic,index)=>(
               <div key={statistic.title}>
-                <div className="font-textFont2 font-bold text-4xl flex items-center gap-5 text-slate-100">
+                <div className="font-textFont2 font-bold lg:text-4xl sm:text-3xl max-sm:text-3xl flex items-center gap-5 text-slate-100">
                   {
                     count[index].toString().length > 3 ?
                     <>
