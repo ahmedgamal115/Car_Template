@@ -3,7 +3,7 @@ import Button from "../Component/Button"
 import { carAccessiories } from "../Constant"
 const Accessories = () => {
   return (
-    <div className="w-full">
+    <div className="w-full overflow-hidden">
         <div className="w-full flex items-center lg:flex-row lg:justify-between
         sm:justify-center sm:flex-col sm:gap-5 max-sm:justify-center max-sm:flex-col max-sm:gap-5">
           <h2 className="lg:text-3xl sm:text-2xl font-textFont2 font-bold">EV ACCESSORIES</h2>

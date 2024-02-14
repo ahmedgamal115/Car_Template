@@ -8,7 +8,7 @@ const AccessoriesCard = ({accessorie}) => {
     <div className="w-full cursor-pointer"
     onMouseEnter={()=>{setHoverCart(true)}}
     onMouseLeave={()=>{setHoverCart(false)}}>
-      <div className="relative lg:w-[400px] max-h-[200px] sm:w-full  
+      <div className="relative lg:w-[100%] max-h-[300px] sm:w-full  
       overflow-hidden">
         <img 
         src={accessorie.img} 
@@ -24,7 +24,7 @@ const AccessoriesCard = ({accessorie}) => {
         }
       </div>
       <div className="mt-5 text-center w-full">
-        <h2 className="font-textFont2 font-bold text-3xl cursor-pointer
+        <h2 className="font-textFont2 font-bold text-2xl cursor-pointer
         hover:text-master-blue">{accessorie.title}</h2>
         <div className="w-full flex items-center justify-center gap-10 mt-3">
           {
