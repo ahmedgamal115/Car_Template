@@ -21,12 +21,10 @@ const ContectUs = () => {
           <EmailForm fouceInput={fouceInput}/>
         </div>
         <div className="lg:w-[35%] sm:w-full max-sm:w-full h-full flex flex-col">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3459.081573012896!2d31.30803412434068!3d29.890750075001385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145837ab2995ff11%3A0x54b54d4523f60f78!2z2YjYrNmK2Ycg2KfYqNin2LjZh9iMINmF2YbYtNij2Kkg2YbYp9i12LHYjCDZgtiz2YUg2K3ZhNmI2KfZhtiMINmF2K3Yp9mB2LjYqSDYp9mE2YLYp9mH2LHYqeKArCA0MDQyNzM4!5e0!3m2!1sar!2seg!4v1702839345602!5m2!1sar!2seg" 
-          className="border-0 w-full h-[370px]"
-          allowFullScreen="" 
-          loading="lazy" 
-          title="location"
-          referrerPolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7292971.823407575!2d36.169214635161396!3d26.8074472785107!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14368976c35c36e9%3A0x2c45a00925c4c444!2z2YXYtdix!5e0!3m2!1sar!2seg!4v1711151994737!5m2!1sar!2seg" 
+        width="600" height="450" className="border-none" 
+        allowfullscreen="" loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
           <div className="flex-1 flex flex-col items-center pt-14 pl-8
           justify-center gap-8">
             {
